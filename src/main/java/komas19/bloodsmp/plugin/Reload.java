@@ -1,14 +1,12 @@
 /*    */ package komas19.bloodsmp.plugin;
 /*    */
 /*    */ import org.bukkit.Bukkit;
-import org.bukkit.Server;
 /*    */ import org.bukkit.command.Command;
 /*    */ import org.bukkit.command.CommandExecutor;
 /*    */ import org.bukkit.command.CommandSender;
-/*    */ import org.bukkit.configuration.file.FileConfiguration;
 /*    */ import org.bukkit.entity.Player;
 /*    */ import org.bukkit.plugin.Plugin;
-/*    */ import org.bukkit.plugin.PluginManager;
+
 /*    */
 /*    */ public class Reload implements CommandExecutor
         /*    */ {
@@ -17,7 +15,6 @@ import org.bukkit.Server;
     /*    */
     /*    */   public Reload(Blocking main)
     /*    */   {
-        /* 19 */     this.main = main;
         /* 20 */     plugin = main;
         /*    */   }
     /*    */
@@ -26,7 +23,7 @@ import org.bukkit.Server;
     /*    */   public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
     /*    */   {
         /* 27 */     Player p = (Player)sender;
-        /* 28 */     if (command.getName().equalsIgnoreCase("blood-reload"))
+        /* 28 */     if (command.getName().equalsIgnoreCase("bloodreload"))
             /*    */     {
             /* 30 */       if (!sender.hasPermission("bloodsmp.reload")) {
                                  p.sendMessage("§cYou do not have permission to use this command");
@@ -44,4 +41,5 @@ import org.bukkit.Server;
             /*    */     }
         /* 42 */     return false;
         /*    */   }
+
     /*    */ }

@@ -3,7 +3,6 @@ package komas19.bloodsmp.plugin;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -13,14 +12,13 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.event.player.PlayerPickupItemEvent;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Blocking extends JavaPlugin implements Listener {
     FileConfiguration config = this.getConfig();
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
+        getCommand("bloodreload").setExecutor(new Reload(this));
         System.out.println("Hello World from Blood SMP Plugin");
         config.options().header("BLOOD SMP PLUGIN CONFIG");
         config.addDefault("netherite", true);
@@ -53,9 +51,13 @@ public class Blocking extends JavaPlugin implements Listener {
             System.out.println("Finished resetting config.yml");
         }
     }
-    private void registerCommands() {
-        getCommand("bloodreload").setExecutor(new Reload(this));
+    public void onDisable() {
+        config.options().copyDefaults(true);
+        saveDefaultConfig();
+        System.out.println("Finished saving config.yml!");
+        System.out.println("Goodbye!");
     }
+
     @EventHandler
     public void onItemHeld(PlayerItemHeldEvent event) {
         ItemStack item = event.getPlayer().getItemInHand();
