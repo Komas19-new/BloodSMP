@@ -1,0 +1,13 @@
+main: komas19.bloodsmp.plugin.Blocking
+name: BloodSMP
+version: 1.9.0
+api-version: 1.19
+commands:
+  bloodreload:
+    description: Reloads the plugin
+    usage: /<command>
+    permission: bloodsmp.reload
+permissions:
+  bloodsmp.reload:
+    description: Allows you to reload the plugin.
+    default: op

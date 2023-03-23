@@ -1,0 +1,15 @@
+main: komas19.bloodsmp.plugin.Blocking
+name: BloodSMP
+version: 1.9.1
+authors: [ Komas19 ]
+description: A private plugin for Blood SMP Minecraft server.
+api-version: 1.19
+commands:
+  bloodreload:
+    description: Reloads the plugin
+    usage: /<command>
+    permission: bloodsmp.reload
+permissions:
+  bloodsmp.reload:
+    description: Allows you to reload the plugin.
+    default: op
