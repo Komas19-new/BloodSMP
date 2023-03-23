@@ -23,6 +23,8 @@ public class Blocking extends JavaPlugin implements Listener {
         config.options().header("BLOOD SMP PLUGIN CONFIG");
         config.addDefault("netherite", true);
         config.addDefault("tipped_arrows", true);
+        config.addDefault("end_crystals", true);
+        config.addDefault("respawn_anchor", true);
         config.addDefault("reset_config", false);
         config.addDefault("config_version", 5);
         config.options().copyDefaults(true);
@@ -43,6 +45,8 @@ public class Blocking extends JavaPlugin implements Listener {
             config.options().header("BLOOD SMP PLUGIN CONFIG");
             config.set("netherite", true);
             config.set("tipped_arrows", true);
+            config.set("end_crystals", true);
+            config.set("respawn_anchor", true);
             config.set("reset_config", false);
             config.set("config_version", 5);
             config.options().copyDefaults(true);
@@ -79,6 +83,24 @@ public class Blocking extends JavaPlugin implements Listener {
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
             }
         }
+        if (config.getBoolean("end_crystals")) {
+            // True
+            if (item != null && item.getType() == Material.END_CRYSTAL) {
+                System.out.println("found end crystal");
+                event.setCancelled(true);
+                event.getPlayer().getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("respawn_anchor")) {
+            // True
+            if (item != null && item.getType() == Material.RESPAWN_ANCHOR) {
+                System.out.println("found RESPAWN ANCHOR");
+                event.setCancelled(true);
+                event.getPlayer().getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+            }
+        }
     }
     @EventHandler
     public void onBlockDestroyed(BlockBreakEvent event) {
@@ -99,6 +121,24 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("end_crystals")) {
+            // True
+            if (item != null && item.getType() == Material.END_CRYSTAL) {
+                System.out.println("found end crystal");
+                event.setCancelled(true);
+                event.getPlayer().getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("respawn_anchor")) {
+            // True
+            if (item != null && item.getType() == Material.RESPAWN_ANCHOR) {
+                System.out.println("found RESPAWN ANCHOR");
+                event.setCancelled(true);
+                event.getPlayer().getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
             }
         }
     }
@@ -123,6 +163,24 @@ public class Blocking extends JavaPlugin implements Listener {
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
             }
         }
+        if (config.getBoolean("end_crystals")) {
+            // True
+            if (item != null && item.getType() == Material.END_CRYSTAL) {
+                System.out.println("found end crystal");
+                event.setCancelled(true);
+                event.getPlayer().getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("respawn_anchor")) {
+            // True
+            if (item != null && item.getType() == Material.RESPAWN_ANCHOR) {
+                System.out.println("found RESPAWN ANCHOR");
+                event.setCancelled(true);
+                event.getPlayer().getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+            }
+        }
     }
 
     @EventHandler
@@ -144,6 +202,24 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("end_crystals")) {
+            // True
+            if (item != null && item.getType() == Material.END_CRYSTAL) {
+                System.out.println("found end crystal");
+                event.setCancelled(true);
+                event.getWhoClicked().getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("respawn_anchor")) {
+            // True
+            if (item != null && item.getType() == Material.RESPAWN_ANCHOR) {
+                System.out.println("found RESPAWN ANCHOR");
+                event.setCancelled(true);
+                event.getWhoClicked().getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
             }
         }
     }
