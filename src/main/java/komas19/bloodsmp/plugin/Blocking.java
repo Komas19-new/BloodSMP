@@ -25,10 +25,8 @@ public class Blocking extends JavaPlugin implements Listener {
         config.options().header("BLOOD SMP PLUGIN CONFIG");
         config.addDefault("netherite", true);
         config.addDefault("tipped_arrows", true);
-        config.addDefault("fly_komas19", true);
-        config.addDefault("fly_thororen", true);
         config.addDefault("reset_config", false);
-        config.addDefault("config_version", 4);
+        config.addDefault("config_version", 5);
         config.options().copyDefaults(true);
         saveDefaultConfig();
         if (config.getBoolean("netherite")) {
@@ -47,10 +45,8 @@ public class Blocking extends JavaPlugin implements Listener {
             config.options().header("BLOOD SMP PLUGIN CONFIG");
             config.set("netherite", true);
             config.set("tipped_arrows", true);
-            config.set("fly_komas19", true);
-            config.set("fly_thororen", true);
             config.set("reset_config", false);
-            config.set("config_version", 4);
+            config.set("config_version", 5);
             config.options().copyDefaults(true);
             saveDefaultConfig();
             this.reloadConfig();
@@ -146,36 +142,6 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
-            }
-        }
-        if (item != null && item.getType() ==Material.CARROT_ON_A_STICK) {
-            if (config.getBoolean("fly-komas19")) {
-                // True
-                event.getWhoClicked().getInventory().getItemInOffHand().getType();
-                {
-                    List<Player> list = new ArrayList<>(Bukkit.getOnlinePlayers());
-                    for (Player player : list) {
-                        if (player.getName().equals("Komas19")) {
-                            player.setAllowFlight(true);
-                            player.setFlying(true);
-                            player.sendMessage("§cYou have activated FLY!");
-                        }
-                    }
-                }
-            }
-            if (config.getBoolean("fly-thororen")) {
-                // True
-                event.getWhoClicked().getInventory().getItemInOffHand().getType();
-                {
-                    List<Player> list = new ArrayList<>(Bukkit.getOnlinePlayers());
-                    for (Player player : list) {
-                        if (player.getName().equals("thororen")) {
-                            player.setAllowFlight(true);
-                            player.setFlying(true);
-                            player.sendMessage("§cYou have activated FLY!");
-                        }
-                    }
-                }
             }
         }
     }
