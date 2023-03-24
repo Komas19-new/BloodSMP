@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'komas19.bloodsmp.plugin'
-version '1.9.3'
+version '1.9.4-SNAPSHOT-1'
 
 repositories {
     mavenCentral()

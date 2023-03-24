@@ -72,6 +72,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("tipped_arrows")) {
@@ -81,6 +82,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("end_crystals")) {
@@ -90,6 +92,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("respawn_anchor")) {
@@ -99,6 +102,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
     }
@@ -112,6 +116,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("netherite")) {
@@ -121,6 +126,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("end_crystals")) {
@@ -130,6 +136,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("respawn_anchor")) {
@@ -139,6 +146,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
     }
@@ -152,6 +160,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("netherite")) {
@@ -161,6 +170,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("end_crystals")) {
@@ -170,6 +180,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
         if (config.getBoolean("respawn_anchor")) {
@@ -179,6 +190,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
     }
@@ -193,6 +205,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getWhoClicked().getName());
             }
         }
         if (config.getBoolean("netherite")) {
@@ -202,6 +215,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getWhoClicked().getName());
             }
         }
         if (config.getBoolean("end_crystals")) {
@@ -211,6 +225,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getWhoClicked().getName());
             }
         }
         if (config.getBoolean("respawn_anchor")) {
@@ -220,6 +235,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+                Bukkit.broadcastMessage(event.getWhoClicked().getName());
             }
         }
     }
