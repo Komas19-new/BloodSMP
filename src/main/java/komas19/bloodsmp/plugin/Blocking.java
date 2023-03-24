@@ -20,6 +20,8 @@ public class Blocking extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(this, this);
         getCommand("bloodreload").setExecutor(new Reload(this));
         System.out.println("Hello World from Blood SMP Plugin");
+        this.saveDefaultConfig();
+        this.getConfig();
         config.options().header("BLOOD SMP PLUGIN CONFIG");
         config.addDefault("netherite", true);
         config.addDefault("tipped_arrows", true);
