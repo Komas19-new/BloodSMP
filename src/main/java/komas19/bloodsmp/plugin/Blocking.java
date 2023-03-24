@@ -6,7 +6,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
-import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.*;
 import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -236,6 +236,123 @@ public class Blocking extends JavaPlugin implements Listener {
                 event.getWhoClicked().getInventory().removeItem(item);
                 Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting respawn anchors.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getWhoClicked().getName());
+            }
+        }
+    }
+    public void onInteractEvent(InventoryInteractEvent event) {
+        ItemStack item = event.getWhoClicked().getActiveItem();
+        if (config.getBoolean("tipped_arrows")) {
+            // True
+            if (item != null && item.getType() ==Material.TIPPED_ARROW) {
+                System.out.println("found tipped arrow");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("netherite")) {
+            // True
+            if (item != null && item.getType() ==Material.ANCIENT_DEBRIS) {
+                System.out.println("found ancient debris");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting ancient debris.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("end_crystals")) {
+            // True
+            if (item != null && item.getType() == Material.END_CRYSTAL) {
+                System.out.println("found end crystal");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting end crystals.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("respawn_anchor")) {
+            // True
+            if (item != null && item.getType() == Material.RESPAWN_ANCHOR) {
+                System.out.println("found RESPAWN ANCHOR");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+            }
+        }
+    }
+    public void onInvOpen(InventoryPickupItemEvent event) {
+        ItemStack item = event.getItem().getItemStack();
+        if (config.getBoolean("tipped_arrows")) {
+            // True
+            if (item != null && item.getType() ==Material.TIPPED_ARROW) {
+                System.out.println("found tipped arrow");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("netherite")) {
+            // True
+            if (item != null && item.getType() ==Material.ANCIENT_DEBRIS) {
+                System.out.println("found ancient debris");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting ancient debris.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("end_crystals")) {
+            // True
+            if (item != null && item.getType() == Material.END_CRYSTAL) {
+                System.out.println("found end crystal");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting end crystals.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("respawn_anchor")) {
+            // True
+            if (item != null && item.getType() == Material.RESPAWN_ANCHOR) {
+                System.out.println("found RESPAWN ANCHOR");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+            }
+        }
+    }
+    public void onInvOpen(InventoryDragEvent event) {
+        ItemStack item = event.getWhoClicked().getActiveItem();
+        if (config.getBoolean("tipped_arrows")) {
+            // True
+            if (item != null && item.getType() ==Material.TIPPED_ARROW) {
+                System.out.println("found tipped arrow");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("netherite")) {
+            // True
+            if (item != null && item.getType() ==Material.ANCIENT_DEBRIS) {
+                System.out.println("found ancient debris");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting ancient debris.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("end_crystals")) {
+            // True
+            if (item != null && item.getType() == Material.END_CRYSTAL) {
+                System.out.println("found end crystal");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting end crystals.. Oops.. Its gone!");
+            }
+        }
+        if (config.getBoolean("respawn_anchor")) {
+            // True
+            if (item != null && item.getType() == Material.RESPAWN_ANCHOR) {
+                System.out.println("found RESPAWN ANCHOR");
+                event.setCancelled(true);
+                event.getInventory().removeItem(item);
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting respawn anchors.. Oops.. Its gone!");
             }
         }
     }
