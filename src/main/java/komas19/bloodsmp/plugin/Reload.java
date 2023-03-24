@@ -26,8 +26,8 @@
         /* 28 */     if (command.getName().equalsIgnoreCase("bloodreload"))
             /*    */     {
             /* 30 */       if (!sender.hasPermission("bloodsmp.reload")) {
-                                 p.sendMessage("§cYou do not have permission to use this command");
-                                 Bukkit.broadcastMessage("§bAn stupid guy tried reloading the custom plugin. Lmfao");
+                                 p.sendMessage("§c[BLOODSMP] You do not have permission to use this command");
+                                 Bukkit.broadcastMessage("§b[BLOODSMP] An stupid guy tried reloading the custom plugin. Lmfao");
 
                 /* 33 */         return true;
                 /*    */       }
@@ -36,7 +36,8 @@
             /* 37 */       plugin.reloadConfig();
             /* 38 */       p.getServer().getPluginManager().disablePlugin(plugin);
             /* 39 */       p.getServer().getPluginManager().enablePlugin(plugin);
-                           p.sendMessage("§cReloaded!");
+                           p.sendMessage("§c[BLOODSMP] Reloaded!");
+                            Bukkit.broadcastMessage("§b[BLOOODSMP] Plugin has reloaded succesfully!");
             /* 40 */       return true;
             /*    */     }
         /* 42 */     return false;

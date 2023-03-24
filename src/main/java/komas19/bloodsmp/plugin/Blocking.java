@@ -71,7 +71,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found ancient debris");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting ancient debris.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -81,7 +81,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found tipped arrow");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting tipped arrows.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -91,7 +91,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found end crystal");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting end crystals.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -101,7 +101,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found RESPAWN ANCHOR");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting respawn anchors.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -115,7 +115,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found tipped arrow");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting tipped arrows.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -125,7 +125,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found ancient debris");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting ancient debris.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -135,7 +135,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found end crystal");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting end crystals.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -145,7 +145,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found RESPAWN ANCHOR");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting respawn anchors.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -159,7 +159,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found tipped arrow");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting tipped arrows.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -169,7 +169,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found ancient debris");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting ancient debris.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -179,7 +179,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found end crystal");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting end crystals.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -189,7 +189,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found RESPAWN ANCHOR");
                 event.setCancelled(true);
                 event.getPlayer().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting respawn anchors.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getPlayer().getName());
             }
         }
@@ -204,7 +204,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found tipped arrow");
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting tipped arrows.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting tipped arrows.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getWhoClicked().getName());
             }
         }
@@ -214,7 +214,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found ancient debris");
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting ancient debris.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting ancient debris.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getWhoClicked().getName());
             }
         }
@@ -224,7 +224,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found end crystal");
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting end crystals.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting end crystals.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getWhoClicked().getName());
             }
         }
@@ -234,7 +234,7 @@ public class Blocking extends JavaPlugin implements Listener {
                 System.out.println("found RESPAWN ANCHOR");
                 event.setCancelled(true);
                 event.getWhoClicked().getInventory().removeItem(item);
-                Bukkit.broadcastMessage("§bAn stupid guy tried getting respawn anchors.. Oops.. Its gone!");
+                Bukkit.broadcastMessage("§b[BLOODSMP] : An stupid guy tried getting respawn anchors.. Oops.. Its gone!");
                 Bukkit.broadcastMessage(event.getWhoClicked().getName());
             }
         }
