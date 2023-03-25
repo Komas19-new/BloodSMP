@@ -1,6 +1,6 @@
 main: komas19.bloodsmp.plugin.Blocking
 name: BloodSMP
-version: 1.9.5-SNAPSHOT-2
+version: 1.9.5
 authors: [ Komas19 ]
 description: A now public plugin for the Blood SMP Minecraft server.
 api-version: 1.19
