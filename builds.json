@@ -1,5 +1,7 @@
 [
     {
+        "NOTE": "ALL VERSIONS BEFORE 1.9.5 WILL BE REMOVED FROM THIS API WHEN 2.0.0 COMES OUT, THIS INCLUDES SNAPSHOTS TOO.",
+
         "versions": {
             "builds": {
                 "1": "1.9.0",
@@ -18,7 +20,8 @@
                 "2": "1.9.4-SNAPSHOT-2",
                 "3": "1.9.5-SNAPSHOT-1",
                 "4": "1.9.5-SNAPSHOT-2",
-                "5": "1.9.9-SNAPSHOT-1"
+                "5": "1.9.9-SNAPSHOT-1",
+                "6": "1.9.9-SNAPSHOT-2"
             }
         }
     }
