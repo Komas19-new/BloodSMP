@@ -36,7 +36,7 @@ import org.bukkit.plugin.Plugin;
                 /*    */       }
             /*    */
             /* 36 */       Plugin plugin = p.getServer().getPluginManager().getPlugin("BloodSMP");
-                            p.sendMessage("§b[BLOODSMP] Plugin is using version " + plugin.getPluginMeta().getVersion());
+                            p.sendMessage("§b[BLOODSMP] The Version of the Plugin is " + plugin.getPluginMeta().getVersion());
             /* 40 */       return true;
             /*    */     }
         /* 42 */     return false;
