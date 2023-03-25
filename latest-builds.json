@@ -1,0 +1,10 @@
+[
+    {
+        "release": {
+            "latest": "1.9.5"
+        },
+        "snapshots": {
+            "latest": "1.9.5-SNAPSHOT-2"
+        }
+    }
+]
