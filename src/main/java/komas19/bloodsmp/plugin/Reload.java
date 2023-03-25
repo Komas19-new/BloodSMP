@@ -37,7 +37,7 @@
             /* 38 */       p.getServer().getPluginManager().disablePlugin(plugin);
             /* 39 */       p.getServer().getPluginManager().enablePlugin(plugin);
                            p.sendMessage("§c[BLOODSMP] Reloaded!");
-                            Bukkit.broadcastMessage("§b[BLOOODSMP] Plugin has reloaded succesfully!");
+                            Bukkit.broadcastMessage("§b[BLOODSMP] Plugin has reloaded successfully!");
             /* 40 */       return true;
             /*    */     }
         /* 42 */     return false;

@@ -21,6 +21,7 @@ public class Blocking extends JavaPlugin implements Listener {
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
         getCommand("bloodreload").setExecutor(new Reload(this));
+        getCommand("barrier").setExecutor(new Barrier(this));
         System.out.println("Hello World from Blood SMP Plugin");
         this.saveDefaultConfig();
         this.getConfig();
