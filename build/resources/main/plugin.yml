@@ -1,6 +1,6 @@
 main: komas19.bloodsmp.plugin.Blocking
 name: BloodSMP
-version: 1.9.6
+version: 1.9.8
 authors: [ Komas19 ]
 description: A now public plugin for the Blood SMP Minecraft server.
 api-version: 1.19
@@ -9,6 +9,10 @@ commands:
     description: Reloads the plugin
     usage: /<command>
     permission: bloodsmp.reload
+  bloodver:
+    description: Shows version of plugin
+    usage: /<command>
+    permission: bloodsmp.version
   barrier:
     description: Give yourself a barrier. Only one
     usage: /<command>
@@ -19,4 +23,7 @@ permissions:
     default: op
   bloodsmp.barrier:
     description: Allows you to give a barrier to yourself
+    default: op
+  bloodsmp.version:
+    description: Allows you to see plugin version
     default: op

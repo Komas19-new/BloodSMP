@@ -1,7 +1,7 @@
 [
     {
         "release": {
-            "latest": "1.9.6"
+            "latest": "1.9.8"
         },
         "snapshots": {
             "latest": "1.9.5-SNAPSHOT-2"
