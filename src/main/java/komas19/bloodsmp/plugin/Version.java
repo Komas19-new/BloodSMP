@@ -10,6 +10,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
+import org.jetbrains.annotations.NotNull;
 
 /*    */
 /*    */ public class Version implements CommandExecutor
@@ -36,7 +37,8 @@ import org.bukkit.plugin.Plugin;
                 /*    */       }
             /*    */
             /* 36 */       Plugin plugin = p.getServer().getPluginManager().getPlugin("BloodSMP");
-                            p.sendMessage("§b[BLOODSMP] The Version of the Plugin is " + plugin.getPluginMeta().getVersion());
+                            @NotNull String ver = plugin.getPluginMeta().getVersion();
+                            p.sendMessage("§b[BLOODSMP] The Version of the Plugin is " + ver);
             /* 40 */       return true;
             /*    */     }
         /* 42 */     return false;
