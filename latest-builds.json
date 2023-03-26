@@ -1,10 +1,4 @@
-[
-    {
-        "release": {
-            "latest": "1.9.8"
-        },
-        "snapshots": {
-            "latest": "1.9.9-SNAPSHOT-3"
-        }
-    }
-]
+{
+    "release": "1.9.8",
+    "snapshot": "1.9.9-SNAPSHOT-3"
+}
