@@ -6,8 +6,8 @@ loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const password = loginForm.password.value;
 
-    if (password === "DKAP_APDN_AOCP_APWX_1KLN") {
-        window.location.replace("https://komas19-new.github.io/BloodSMP/");
+    if (password === "swaggyerror") {
+        window.location.replace("https://komas19-new.github.io/BloodSMP/success.html");
     } else {
         loginErrorMsg.style.opacity = 1;
     }
